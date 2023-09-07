@@ -110,7 +110,7 @@ function time (){
 
     let load = 0 ;
     const counter = setInterval(() => {
-        load=+ load + 4
+        load=+ load + Math.floor(Math.random() * 10 )
 
         if(load < 100){
             number.innerHTML  = load+"%"
@@ -147,7 +147,7 @@ var landingpagetl = gsap.timeline();
 
 
 landingpagetl.to('#loader #number',{
-    duration: 2.5,
+    duration: 3.8,
     onStart: time(),
 })
 
