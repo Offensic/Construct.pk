@@ -107,13 +107,10 @@ a {
     backdrop-filter: blur(15px);
     /* border: 2px solid rgba(255, 255, 255, .5); */
     box-shadow: 0 25px 45px rgba(107, 104, 104, 0);
-    /* background-color: rgb(129, 124, 124); */
     position: absolute;
     top: 0;
     right: 0;
-    /* display: none; */
     transition: .3s ease-in-out;
-    /* transform: translateX(100%); */
     display: flex;
     justify-content: center;
     align-items: center;

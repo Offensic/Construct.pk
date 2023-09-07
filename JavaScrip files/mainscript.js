@@ -11,6 +11,7 @@ var DownArrow = document.querySelector('#Down-Arrow')
 
 
 var ReviewContainer = document.querySelector('#Review-container')
+var number = document.querySelector('#number')
 
 
 
@@ -92,8 +93,6 @@ window.addEventListener("scroll", function () {
 
 
 //  Function for Move the review Slider
-
-
 function MoveReviewRight() {
 
     var scrollX = 1;
@@ -106,6 +105,28 @@ function MoveReviewLeft() {
 }
 
 
+// ------------------------------- Function for the Loader of Website to run  a Loading.
+function time (){
+
+    let load = 0 ;
+    const counter = setInterval(() => {
+        load=+ load + 4
+
+        if(load < 100){
+            number.innerHTML  = load+"%"
+        }
+
+        else{
+            number.innerHTML = 100+"%"
+            clearInterval(counter)
+        }
+
+    },150)
+
+
+
+
+}
 
 
 
@@ -120,8 +141,21 @@ function MoveReviewLeft() {
 
 
 // gsap for Landingpage
+
+
 var landingpagetl = gsap.timeline();
 
+
+landingpagetl.to('#loader #number',{
+    duration: 2.5,
+    onStart: time(),
+})
+
+
+landingpagetl.to('#loader',{
+    top: '-100vh',
+    duration: 1,
+})
 gsap.to('#Navbar', {
     opacity: 1,
     duration: 1,
@@ -129,7 +163,6 @@ gsap.to('#Navbar', {
 
 landingpagetl.to('#title h1', {
     paddingTop: '0px',
-    duration: 1,
     opacity: 1,
     duration: 0.9,
 
@@ -230,7 +263,7 @@ gsap.from('#Specialist #Icon-box .box', {
 gsap.from('#Work #heading', {
 
     opacity: 0,
-    duraion: 1.5,
+    duration: 1.5,
     y: -100,
     stagger: 0.3,
     scrollTrigger: {
@@ -243,7 +276,7 @@ gsap.from('#Work #heading', {
 gsap.from('#project-box .row .project', {
 
     opacity: 1,
-    duraion: 1.5,
+    duration: 1.5,
     stagger: 1,
     scale: 0,
     y: '200px',
@@ -284,6 +317,11 @@ gsap.from('#Work-stages .steps', {
     }
 
 })
+
+
+
+
+
 
 
 
