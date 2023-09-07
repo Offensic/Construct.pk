@@ -88,17 +88,7 @@ a {
     opacity: .4;
 }
 
-#Navbar #menu-open{
-    color: var(--text-color);
-    font-size: 30px;
-    cursor: pointer;
-    display: none;
-    z-index: 999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
+#Navbar #menu-open,
 #menu-close {
     color: var(--text-color);
     font-size: 26px;

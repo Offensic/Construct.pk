@@ -97,6 +97,9 @@
     transition: 0.5s ease-in-out;
 }
 
+.row .project{
+    border-radius: 10px;
+}
 #Projects-link a:hover{
     margin-left: 5px;
 }
