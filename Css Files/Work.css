@@ -1,0 +1,124 @@
+#Work {
+    margin-top: 50px;
+    width: 100%;
+    background-color: #263039;
+    /* border-bottom: 1.1px dashed white; */
+
+}
+
+#heading {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#heading h1 {
+    font-family: 'Oxygen', sans-serif;
+    color: white;
+    font-size: clamp(25px, 3.9vw, 40px);
+    border: 1px dashed white;
+    padding: 10px 30px;
+    border-radius: 50px;
+
+}
+
+#project-box {
+    height: 100%;
+    width: 100%;
+
+
+}
+
+#project-box .row {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+#project-box .row .col , img{
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+
+ #All-project{
+    background-color: #14191d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+ #All-project #heading{
+    height: 90%;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding: 5px 20px;
+}
+
+#heading h3{
+    font-size: clamp(49px, 4vw , 53px);
+    
+}
+
+#heading p{
+    font-size: 16px;
+    font-family: sans-serif;
+
+    
+}
+
+#All-project #Projects-link {
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    height: 10%;
+    padding: 5px 20px;
+
+}
+
+#Projects-link a{
+    font-size: 12px;
+    color: var(--hover-color);
+    display: flex;
+    justify-content: start;
+    object-fit: contain;
+    transition: 0.5s ease-in-out;
+}
+
+#Projects-link a:hover{
+    margin-left: 5px;
+}
+
+.project #heading{
+    width: 100%;
+    height: 100%;
+    color: var(--text-color);
+    font-family: 'Oxygen', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 5px 15px;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.project:hover > #heading{
+    cursor: pointer;
+    backdrop-filter: blur(1.5px);
+}
+
+
+

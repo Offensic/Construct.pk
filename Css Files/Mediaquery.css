@@ -1,0 +1,222 @@
+/* ------------- @mediaQuery Section For the landinga Page */
+@media (max-width: 500px) {
+    /* #Navbar {
+        border-radius: 25px;
+    } */
+
+    #landingpage {
+        background-image: url('../assest/10.jpg');
+    }
+
+
+    #landingpage #HeroSection {
+        margin: 0;
+    }
+
+    /* Ajusting a Heading  on Small size */
+    #landingpage #HeroSection #Hero_heading {
+        display: block;
+    }
+
+    #Icon_bar #Down-Arrow {
+        width: 100%;
+        display: block;
+    }
+
+    #landingpage #HeroSection #Slider_div {
+        display: none;
+    }
+
+    #Icon_bar #MoveArrows {
+        display: none;
+    }
+
+    /* Set the Conact Icon on Right side in them middle on mobile screen size  */
+    #Icon_bar #Contact_icon {
+        top: 68%;
+        right: -16%;
+        position: absolute;
+        transform: rotate(90deg);
+        justify-content: center;
+        padding: 0;
+    }
+
+    #Icon_bar #Contact_icon span a{
+
+        padding: 0px 17px 0px 17px;
+    }
+
+    #landingpage #HeroSection #Hero_heading {
+        /* justify-content: start; */
+        margin-top: 6.5vh;
+    }
+
+
+}
+
+@media (max-width: 767px) {
+
+
+    /* Showing a Menu-open Icon */
+    #Navbar #menu-open {
+        display: block;
+    }
+
+    /*  Hiding  a links */
+    #Navbar #links {
+        display: none;
+    }
+
+    /* Giving a margin and padding to adjust a slider on medium  */
+    #landingpage #HeroSection #Slider_div {
+        margin-left: 60px;
+        padding: 20px;
+    }
+
+
+    /* ------------------------------ About secton code */
+    #About {
+        flex-direction: column;
+    }
+
+    #About #L-side {
+        width: 100%;
+        height: 30%;
+    }
+
+    #About #R-side {
+        width: 100%;
+        height: 70%;
+    }
+
+
+}
+
+/* ---------------------------- @media query Code for the Stage of Work page */
+@media (max-width: 500px) {
+
+    /* Giving a Full height to the wrapper in small screen size to show batter on 
+    /* screen avoid to giving in large and on meidum becuase it cause scroll bar fot the som reason */
+    .steps #wrapper {
+        height: 90%;
+    }
+
+    /* Giving a Full height to the wrapper in small screen size to show batter on 
+    /* screen avoid to giving in large and on meidum becuase it cause scroll bar fot the som reason */
+    #Work-stages .steps {
+        height: 90%;
+    }
+
+    /* Adding blur on small screen size */
+    #content #picture img {
+        width: 70%;
+        height: 70%;
+    }
+
+    /* Adjusting  setep4 text on small screen */
+    #step4 #wrapper #text {
+        top: 40%;
+    }
+}
+
+@media(max-width: 700px) {
+
+    /* --------------------------------------- Code for stage-of-work */
+    #Stage-of-work #content {
+        flex-direction: column;
+        position: relative;
+    }
+
+    /* Givien a picture div to full width it containet full screen */
+    #content #picture {
+        width: 100%;
+    }
+
+
+
+
+    #content #Work-stages {
+        width: 100%;
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px 10px;
+    }
+
+    #step4 #wrapper #text {
+        left: 41%;
+    }
+
+}
+
+
+
+/* --------------------------------- @media Quey for the Review Page */
+@media (max-width: 500px) {
+    #Review #content {
+        padding: 10px 0 0 0;
+    }
+
+    #Review-container .Review-box .Review-heading {
+        margin-top: 10px;
+        width: 100%;
+        /* top: 100%; */
+        /* left: 0; */
+        /* left: 20%; */
+    }
+}
+
+
+/*------------------------------------ @media query for the Contact us page*/
+@media (max-width: 700px) {
+
+    #content #contact-heading {
+        width: 100%;
+    }
+
+    #content #input {
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 40px;
+
+    }
+
+    ::placeholder {
+        text-align: center;
+    }
+
+
+
+}
+
+/*------------------------------------ @media query for the Footer page*/
+@media (max-width: 700px) {
+
+    #footer #content {
+        flex-direction: column;
+    }
+
+    #footer #content .box {
+        width: 100%;
+
+    }
+    #content #Contact-box #icon{
+        justify-content: start;
+        
+    }
+    #content #newsletter{
+        padding: 0 40px;
+    }
+
+}
+
+@media (max-width: 500px) {
+    #content #Contact-box{
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    
+}

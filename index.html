@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap 5 Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- Link of Google Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Overpass:wght@700;800&family=Oxygen:wght@700&family=Poppins:ital,wght@0,600;0,700;0,900;1,500&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Bootstrap SVg Icon Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Landing Page Css Link -->
+    <link rel="stylesheet" href="./Css Files/LandingPage.css">
+    <!-- About us Css Link -->
+    <link rel="stylesheet" href="./Css Files/About.css">
+    <!-- Specialist Css link -->
+    <link rel="stylesheet" href="./Css Files/Specialist.css">
+    <!-- Work page Css Link -->
+    <link rel="stylesheet" href="./Css Files/Work.css">
+    <!-- Stage-of-work of Css File Link -->
+    <link rel="stylesheet" href="./Css Files/Stage-ofwork.css">
+    <!-- Review page -->
+    <link rel="stylesheet" href="./Css Files/Review-Page.css">
+    <!-- Contact Us page Css link -->
+    <link rel="stylesheet" href="./Css Files/Contactus.css">
+    <!-- Footer Css File link -->
+    <link rel="stylesheet" href="./Css Files/footer.css">
+
+    <link rel="stylesheet" href="./Css Files/Mediaquery.css">
+    <title>Landing Page | Constrcution</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        html,
+        body {
+            width: 100%;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+            background: #14191d;
+
+        }
+
+        :root {
+            /* --hover-color: rgb(255, 136, 0); */
+            --hover-color: #F1A009;
+            --text-color: white;
+        }
+
+        /* ----------- Scroll bar Customization */
+        /* ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: white;
+        }
+
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #303030;
+
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #2c2c2c;
+
+
+        }  */
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar Slider Open or Close on Click I define this on top becuase i want to maintain my Slider on all screen-->
+    <div id="Navbar_Slider">
+        <div id="Sliderlinks">
+            <a href="#landingpage">HOME</a>
+            <a href="#Aboutus">COMPANY</a>
+            <a href="#">PROJECT</a>
+            <a href="#">REVIEWS</a>
+            <a href="#">CONTACT</a>
+        </div>
+    </div>
+
+    <div id="main">
+
+
+
+        <!-- This is a Page 1 (LandinagPage Page )-->
+        <section id="landingpage">
+
+
+
+            <div id="Navbar">
+
+                <div id="logo">
+                    <span><i class="bi bi-houses-fill"></i></span>
+                </div>
+                <div id="links">
+                    <a href="#landingpage">HOME</a>
+                    <a href="#About">COMPANY</a>
+                    <a href="#Work">PROJECT</a>
+                    <a href="#Review">REVIEWS</a>
+                    <a href="#Contact-us">CONTACT</a>
+                    <span><i class="bi bi-houses-fill"></i></span>
+                </div>
+
+
+                <div id="menu-open"><span><i class=" bi bi-list"></i></span></div>
+                <div id="menu-close"><span><i class="bi bi-x-lg"></i></span></div>
+
+            </div>
+
+            <div class="row" id="HeroSection">
+                <!-- Main Hero Heading  part -->
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-5 col-xl-5" id="Hero_heading">
+                    <div id="title" style="width: fit-content;">
+                        <h1>Pakistan.</h1>
+                        <h1>Aestetic Homes</h1>
+                        <p>Desing and Constrcution of aestetic home in Pakistan.</p>
+
+                        <button id="callnow_btn">CALL NOW</button>
+                    </div>
+                </div>
+
+                <!-- Project Slider  -->
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-7 col-xl-7" id="Slider_div">
+
+                    <div id="row" style="display: flex; justify-content: flex-end; ">
+
+                        <div id="project1" class="project ">
+
+                            <img src="./assest/1.jpg"
+                                alt="Modern Off-white house color make by brown wodden with dark-browny stears car parking roff with glass balcony "
+                                loading="lazy">
+                            <span>Project 1</span>
+                        </div>
+
+                        <div id="project1" class="project ">
+                            <img src="./assest/2.jpg"
+                                alt="Modern small black house decorated with black lines tiles Blury glass window on it front to see"
+                                loading="lazy">
+                            <span>Project 2</span>
+                        </div>
+
+
+                        <div id="project1" class="project ">
+                            <img src="./assest/3.jpg"
+                                alt="Modern skyblue house decorated with skyblue tiles Desing with lots white window glasses glassy  main door with "
+                                loading="lazy">
+                            <span>Project 3</span>
+                        </div>
+
+                        <div id="project1" class="project">
+                            <img src="./assest/4.jpg"
+                                alt="Modern and classic White and gray house on Loooking Beautilfull on the main road. decorated it fronts with  loats of white lights"
+                                loading="lazy">
+                            <span>Project 4</span>
+                        </div>
+
+                        <div id="project1" class="project">
+                            <img src="./assest/5.jpg"
+                                alt="Modern Luxury house.  Piller are made of  Brown strong Wooden and Wall are made of Browny shady strong glasses"
+                                loading="lazy">
+                            <span>Project 5</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Icon bar in which Contac icon and Move Arrows -->
+                <div id="Icon_bar" class="row">
+
+                    <div id="Contact_icon" class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                        <span><a href=""><i class="bi bi-instagram" target="_blank"></i></a></span>
+                        <span><a href="https://wa.me/+923228098308" target="_blank"><i
+                                    class="bi bi-whatsapp"></i></a></span>
+                        <span><a href=""><i class="bi bi-facebook" target="_blank"></i></a></span>
+
+                    </div>
+
+                    <div id="Down-Arrow">
+                        <span><i class="bi bi-chevron-compact-down"></i></span>
+                    </div>
+
+
+                    <div id="MoveArrows" class="col  col-sm-12 col-md-6 col-lg-6 col-xl-6">
+
+                        <span onclick="LeftArrow()"><i class="bi bi-arrow-left-circle"></i></span>
+                        <span onclick="RightArrow()"><i class="bi bi-arrow-right-circle"></i></span>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- This is a Page 2 (About us Page )-->
+        <section id="About">
+
+            <div id="L-side">
+                <div id="headings">
+                    <h1>About us</h1>
+                    <p style="color: red;">Construction and Design: The art of construction and design is the
+                        cornerstone of shaping
+                        functional and visually appealing spaces. It's the fusion of creativity and engineering, where
+                        ideas are transformed into physical reality, creating environments that inspire, facilitate, and
+                        leave lasting impressions.</p>
+
+                    <br>
+                    <p style="color: red;">Construction and Design: The art of construction and design is the
+                        cornerstone of shaping.
+                    </p>
+                </div>
+
+                <img class="circleimg" id="circle1" src="./assest/Circle 1.png"
+                    alt="Blury Circle image to add for beauty on the background of a text" loading="lazy">
+                <img class="circleimg" id="circle2" src="./assest/Circle 2.png"
+                    alt="Blury Circle image to add for beauty on the background of a text" loading="lazy">
+            </div>
+
+            <div id="R-side">
+                <div style="overflow: hidden; position: relative;">
+
+                    <div id="img" style="position: relative;">
+                        <img src="./assest/About us.jpg"
+                            alt=" CEO image that sit down on the wood chair. Weared a Dress pant and  shirts"
+                            loading="lazy">
+                    </div>
+
+                    <div id="title">
+                        <h4>CEO</h4>
+                    </div>
+
+                    <div id="hover-card">
+                        <p style="color: red;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam quasi
+                            vitae repellat ad
+                            optio quibusdam cumque adipisci in quos aperiam</p>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- This is a Page 3 (Specalist page)-->
+        <section id="Specialist">
+            <div id="heading">
+                <h2>Why Pakistan. Aesteic Homes ?</h2>
+            </div>
+
+            <div id="Icon-box">
+
+                <div class="box">
+                    <div class="icon">
+                        <i class="bi bi-recycle"></i>
+                    </div>
+                    <div class="title">
+                        <p>Sustainable</p>
+                    </div>
+
+                </div>
+
+                <div class="box">
+                    <div class="icon">
+                        <i class="bi bi-currency-dollar"></i>
+                    </div>
+                    <div class="title">
+                        <p>Value for Money</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="icon">
+                        <i class="bi bi-globe-americas"></i>
+                    </div>
+                    <div class="title">
+                        <p>Earthquake Proof</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="icon">
+                        <i class="bi bi-buildings-fill"></i>
+                    </div>
+                    <div class="title">
+                        <p>Fast Construction</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="icon">
+                        <i class="bi bi-cloud-lightning-rain"></i>
+                    </div>
+                    <div class="title">
+                        <p>Low Mentenance</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- This is a Page 4 (Work Page )-->
+        <section id="Work">
+
+            <div id="heading">
+                <h1>A Selection of our work</h1>
+            </div>
+
+            <div id="project-box" class="container-fluid">
+
+                <div class="row">
+
+                    <div id="All-project" class="col col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 m-2"
+                        style="height: 300px;">
+
+                        <div id="heading">
+                            <h3>Pakistan Aestetic Homes</h3>
+                            <p>Desing For life</p>
+                        </div>
+
+                        <div id="Projects-link">
+                            <a href="#Projectpage">View all project</a>
+                        </div>
+                    </div>
+
+                    <div class="col col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 m-2 project"
+                        style="background-image: url('./assest/5.jpg'); background-position: center; background-image: cover; height:300px;">
+
+                        <div id="heading">
+                            <span>The Okland</span>
+                            <span>150m</span>
+                        </div>
+
+                    </div>
+
+                    <div class="col col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 m-2 project">
+                        <img class="img-fluid" src="./assest/7.jpg" alt="" style="height: 360px;" loading="lazy">
+
+                        <div id="heading">
+                            <span>The Shulter</span>
+                            <span>250m</span>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 m-2 project">
+                        <img class="img-fluid" src="./assest/4.jpg" alt="" style="height: 360px;" loading="lazy">
+
+                        <div id="heading">
+                            <span>The New York</span>
+                            <span>100m</span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+        <!-- This is a Page 5 (Work us Page) -->
+        <section id="Stage-of-work">
+            <div id="heading">
+                <h1>Stages of Work:</h1>
+            </div>
+
+            <div id="content">
+                <!-- This is left part Picture div -->
+                <div id="picture">
+                    <img src="./assest/Work Stage.png" alt="">
+                </div>
+
+                <!-- This is a Right Part Work Stages -->
+                <div id="Work-stages">
+                    <!-- Step 1 -->
+                    <div id="step1" class="steps">
+                        <div id="wrapper">
+                            <h2>01</h2>
+                            <div id="text">
+                                <h3>Meeting with architect</h3>
+                                <p>Discussion of details, defining scope of work, scheduling oppointment at the
+                                    construction area.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Step 2 -->
+                    <div id="step2" class="steps">
+                        <div id="wrapper">
+                            <h2>02</h2>
+                            <div id="text">
+                                <h3>Contract</h3>
+                                <p>Defining the technical requirement, signing a contract.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Step 3 -->
+                    <div id="step3" class="steps">
+                        <div id="wrapper">
+                            <h2>03</h2>
+                            <div id="text">
+                                <h3>3D Visualization</h3>
+                                <p>Visualization of project including a tiny details a interior</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Step 4 -->
+                    <div id="step4" class="steps">
+                        <div id="wrapper">
+                            <h2>04</h2>
+                            <div id="text">
+                                <h3>Start construction</h3>
+                                <p>After negotiation of project desing the constrction process is limited.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- This is a Page 6 (Review Page) -->
+        <section id="Review">
+            <div id="heading">
+                <h1>Reviews</h1>
+            </div>
+
+            <div id="content">
+
+                <div id="wrapper">
+                    <div id="Review-move-left">
+                        <span onclick="MoveReviewLeft()" ><i class="bi bi-arrow-left"></i></span>
+                    </div>
+
+
+                    <div id="Review-container">
+                        <div class="Review-box">
+                            <div class="Review-img">
+                                <img src="./assest/Compress/2.jpg" alt="">
+                            </div>
+
+                            <div class="Review-heading">
+
+                            </div>
+                        </div>
+
+                        <div class="Review-box">
+                            <div class="Review-img">
+                                <img src="./assest/1.jpg" alt="">
+                            </div>
+
+                            <div class="Review-heading">
+
+                                <div class="rev-title">
+
+                                    <span>Jack Sparrow</span>
+                                    <div>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                </div>
+
+                                <div class="rev-para">
+                                    <p>❝ Very happy with the team from Pakistan. Aestetic Homes for Providing  us with a smooth  and trouble-free planning stage
+                                        for oour dream home. Our house was fully custom-built and homes were able to satisfy our needs. ❞
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="Review-box">
+                            <div class="Review-img">
+                                <img src="./assest/4.jpg" alt="">
+                            </div>
+
+                            <div class="Review-heading">
+                                <div class="rev-title">
+
+                                    <span>Usama</span>
+                                    <div>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                    </div>
+                                </div>
+
+                                <div class="rev-para">
+                                    <p>❝ Very happy with the team from Pakistan. Aestetic Homes for Providing  us with a smooth  and trouble-free planning stage
+                                        for oour dream home. Our house was fully custom-built and homes were able to satisfy our needs. ❞
+                                    </p>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                    <div id="Review-move-right">
+                        <span  onclick="MoveReviewRight()" ><i class="bi bi-arrow-right"></i></span>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- This is Page 7 (Contact Us page ) -->
+        <section id="Contact-us">
+
+            <div id="Bac-pic">
+                <img src="./assest/9.png" alt="">
+                <div id="Blur-layer">
+
+                    <div id="content">
+                        <div id="contact-heading">
+                            <h1>For Project enquiries, please contact us below</h1>
+                        </div>
+
+                        <div id="input">
+                            <input type="text" placeholder="Your name" id="name">
+                            <input type="number" placeholder="Your number" id="number">
+                            <input type="email" placeholder="Your email" id="email">
+                        </div>
+
+                        <div>
+                            <p id="button">SEND</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- This is Page 8 (Footer) -->
+        <section id="footer">
+
+            <div id="heading">
+                <h1>Pakistan. Aestetic Homes</h1>
+            </div>
+
+            <div id="content">
+                <div id="location" class="box">
+                    <div>
+                        <p style="color: red;">Office Location</p>
+                        <p>+92304-4006056</p>
+                        <p>abdulwaheed12533@gmail.com</p>
+                        <p style="color: red;">License Required</p>
+                    </div>
+                </div>
+                <div id="Contact-box" class="box">
+                    <div id="icon">
+                        <span><a href="" target="_blank"><i class="bi bi-instagram"></i></a></span>
+                        <span><a href="https://wa.me/+923228098308" target="_blank"><i
+                                    class="bi bi-whatsapp"></i></a></span>
+                        <span><a href="" target="_blank"><i class="bi bi-facebook"></i></a></span>
+                    </div>
+                </div>
+
+                <div id="newsletter" class="box">
+
+                    <div id="title">
+                        <i class="bi bi-envelope"></i>
+                        <p>Singup for our newsletter</p>
+                    </div>
+
+                    <div id="input-box">
+                        <input type="email">
+                        <p>Singup</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </div>
+
+
+
+
+    <!-- External CDN Link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="./JavaScrip files/mainscript.js"></script>
+
+    </script>
+</body>
+
+</html>

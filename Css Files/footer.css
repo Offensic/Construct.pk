@@ -1,0 +1,138 @@
+#footer {
+    width: 100%;
+    background-color: #14191d;
+
+}
+
+
+/* footer heading Code */
+#footer #heading{
+    text-align: center;
+}
+#footer #heading h1 {
+    border: 1.1px dashed white;
+    text-align: center;
+    color: white;
+    font-family: 'Oxygen', sans-serif;
+    font-size: clamp(19px, 2.5vw, 35px);
+    margin: clamp(20px, 13vw, 140px) 0;
+
+}
+
+
+
+#footer #content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 40px;
+
+}
+
+#footer #content .box{
+    width: 25%;
+    height: clamp(130px, 16vw, 200px);
+}
+
+/*  Setting some styling to the location Box */
+#content #location {
+    height: 100%;
+    padding: 0px 40px;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+#content #location p{
+    color: white;
+    font-size: clamp(12px, 1.3vw, 14px);
+    line-height: 2px;
+    font-weight: 500;
+    font-style: italic;
+    transition: 0.3s ease-in;
+}
+
+#content #location p:hover{
+    cursor: pointer;
+    color: var(--hover-color);
+}
+
+
+/*  Setting some styling to the Contac-box */
+#content #Contact-box{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+#content #Contact-box #icon{
+    padding: 0 clamp(40px,4vw ,45px);
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content:  center;
+    gap: 15px;
+
+}
+#content #icon span  a  i{
+    color: var(--hover-color);
+    font-size: 25px;
+    padding: 5px 8px;
+    transition: 0.4s ease-out;
+    border-radius: 5px;
+    gap: 3px;
+}
+
+#content #icon span a i:hover{
+    cursor: pointer;
+    filter: blur(0.9px);
+    background-color: #1b2631;
+        
+}
+
+/*  Newsletter box Code */
+#content #newsletter{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+}
+
+#newsletter #title{
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+    color: white;
+    font-family: sans-serif;
+}
+
+#content #newsletter #input-box {
+    width: 100%;
+}
+#content #newsletter #input-box , input{
+    outline: none;
+    gap: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+}
+
+#content #newsletter #input-box p{
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    width: fit-content;
+    height: 100%;
+    color: var(--hover-color);
+    font-size: 16px;
+    font-weight: thin;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    transition: 0.4s ease-in-out;
+}
+
+#content #newsletter #input-box p:hover{
+    filter: blur(0.6px);
+    cursor: pointer;
+}
