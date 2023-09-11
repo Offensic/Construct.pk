@@ -32,8 +32,9 @@
     overflow-x: auto;
     scroll-behavior: smooth;
     opacity: .9;
-    
 }
+
+
 
 #Icon-box::-webkit-scrollbar{
     display: none;
@@ -54,7 +55,11 @@
     flex-grow: 0;
     flex-shrink: 0;
     flex-basis: 200px;
-    
+    transition: .3s ease-in-out;
+}
+
+#Icon-box .box:hover{
+    border: 1.1px dashed white;
 }
 
 .box .icon i{

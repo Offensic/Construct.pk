@@ -5,7 +5,7 @@
     } */
 
     #landingpage {
-        background-image: url('../assest/10.jpg');
+        background-image: url('../assest/2.jpg');
     }
 
 
@@ -41,7 +41,7 @@
         padding: 0;
     }
 
-    #Icon_bar #Contact_icon span a{
+    #Icon_bar #Contact_icon span a {
 
         padding: 0px 17px 0px 17px;
     }
@@ -91,6 +91,15 @@
 
 
 }
+
+/* ---------------------------- @media query for the specilist page */
+@media (max-width: 1075px) {
+    #Specialist #Icon-box {
+        justify-content: start;
+    }
+
+}
+
 
 /* ---------------------------- @media query Code for the Stage of Work page */
 @media (max-width: 500px) {
@@ -201,22 +210,24 @@
         width: 100%;
 
     }
-    #content #Contact-box #icon{
+
+    #content #Contact-box #icon {
         justify-content: start;
-        
+
     }
-    #content #newsletter{
+
+    #content #newsletter {
         padding: 0 40px;
     }
 
 }
 
 @media (max-width: 500px) {
-    #content #Contact-box{
+    #content #Contact-box {
         justify-content: center;
         align-items: center;
     }
 
 
-    
+
 }

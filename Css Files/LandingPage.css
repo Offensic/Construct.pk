@@ -101,7 +101,7 @@ a {
 /*  Navbar Slider */
 #Navbar_Slider {
     width: 0%;
-    height: 100%;
+    height: 100svh;
     z-index: 0;
     background: rgba(255, 255, 255, .1);
     backdrop-filter: blur(15px);
@@ -114,10 +114,10 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-    overflow-x: hidden;
     transition: 0.3s ease-in;
+    overflow: hidden;
 }
+
 
 #Navbar_Slider #Sliderlinks {
     position: absolute;
@@ -192,7 +192,8 @@ a {
 }
 
 #Hero_heading #callnow_btn {
-    padding: 9px 47px 9px 47px;
+    width: clamp(150px, 13.5vw, 200px);
+    padding: 9px 0px 9px 0px;
     border: 1px solid var(--hover-color);
     font-size: 12px;
     font-family: 'Oxygen', sans-serif;
@@ -256,6 +257,7 @@ img {
     align-items: end;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 0px 0px 10px 10px;
+    
 }
 
 #Slider_div #row .project:hover>span {

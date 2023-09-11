@@ -11,21 +11,21 @@ var DownArrow = document.querySelector('#Down-Arrow')
 
 
 var ReviewContainer = document.querySelector('#Review-container')
-var number = document.querySelector('#number')
+const projects = document.querySelectorAll(".project")
+
+const Navlinks = document.querySelectorAll('.navlink')
 
 
 
-
+// For Opening the Navbar Slider
 menuopen.addEventListener('click', function () {
-    // NavbarSlider.style.display = 'block';
 
 
     setTimeout(function () {
-        // NavbarSlider.style.transform = `translateX(0%) `;
         NavbarSlider.style.zIndex = '99';
         NavbarSlider.style.width = '100%';
-
-
+        // Giving fix height to the Main div becuase it an be hide the overflow I am unbale to hide in css
+        main.style.height = '100svh';
 
         setTimeout(function () {
             menuclose.style.display = 'block';
@@ -38,20 +38,28 @@ menuopen.addEventListener('click', function () {
 
         }, 250)
 
+
+
     }, 250)
+
 
 
 
 })
 
-// For Closing Navbar Slide 
-menuclose.addEventListener('click', function () {
+
+
+// For Closing Navbar Slider 
+function MenuClose() {
 
 
     setTimeout(function () {
         // NavbarSlider.style.transform = `translateX(100%)`
         NavbarSlider.style.zIndex = '0';
         NavbarSlider.style.width = '0%';
+        // removing fix height to the Main div becuase I want to see the the content on full browser
+        main.style.height = '0%';
+
 
 
         setTimeout(function () {
@@ -64,7 +72,16 @@ menuclose.addEventListener('click', function () {
     menuopen.style.display = 'block';
     menuclose.style.display = 'none';
 
+}
+
+//I make for this becauase i want to use 1 more time this function
+menuclose.addEventListener('click', function () {
+
+    MenuClose()
 })
+
+
+
 
 // --------------------------- Move the Landinage Slider with an Arrrows
 function RightArrow() {
@@ -105,57 +122,106 @@ function MoveReviewLeft() {
 }
 
 
-// ------------------------------- Function for the Loader of Website to run  a Loading.
-function time (){
 
-    let load = 0 ;
-    const counter = setInterval(() => {
-        load=+ load + Math.floor(Math.random() * 10 )
+//  ----------------------------- Fucntion for capture the click object id
+projects.forEach((project) => {
+    project.addEventListener('click', function (detail) {
 
-        if(load < 100){
-            number.innerHTML  = load+"%"
+        var clickid = project.id;
+
+        localStorage.setItem('Clickid', clickid)
+
+
+
+    })
+
+})
+
+
+
+//------------------------------------  funtion for Working Responsive Navbar
+Navlinks.forEach(navlink => {
+
+    navlink.addEventListener('click', function () {
+        if (window.innerWidth <= 767) {
+            MenuClose()
         }
+    })
 
-        else{
-            number.innerHTML = 100+"%"
-            clearInterval(counter)
-        }
-
-    },150)
+})
 
 
+window.onbeforeunload = function close() {
 
+
+    alert('do you really want to close')
 
 }
 
 
-
+// ---------------------------- Function for the loader
+var number = document.querySelector('#number')
+var loader = document.querySelector('#loader')
 
 
 
 
 
 ////////////// ----------------------------------------------- GSAP CODE ----------------------------------- ///////////////////
-
-
-
-
-// gsap for Landingpage
-
-
 var landingpagetl = gsap.timeline();
+// gsap for Landingpage
+function loadeer() {
 
+    if (localStorage.getItem("hasCodeRunBefore") === null) {
 
-landingpagetl.to('#loader #number',{
-    duration: 3.8,
-    onStart: time(),
-})
+        localStorage.setItem("hasCodeRunBefore", true)
+        loader.style.display = 'flex';
+        function time() {
+            main.style.height = '100svh';
+            let load = 0;
+            const counter = setInterval(() => {
+                load = + load + Math.floor(Math.random() * 10)
 
+                if (load < 100) {
+                    number.innerHTML = load + "%"
+                }
 
-landingpagetl.to('#loader',{
-    top: '-100vh',
-    duration: 1,
-})
+                else {
+                    number.innerHTML = 100 + "%"
+                    clearInterval(counter)
+                    main.style.height = '0%';
+
+                }
+
+            }, 150)
+        }
+
+        landingpagetl.to('#loader #number', {
+            duration: 3.8,
+            onStart: time(),
+        })
+
+        landingpagetl.to('#loader', {
+            top: '-100vh',
+            duration: 1,
+        })
+    }
+    else {
+    }
+}
+
+loadeer()
+
+// landingpagetl.to('#loader #number', {
+//     duration: 3.8,
+//     onStart: time(),
+// })
+
+// landingpagetl.to('#loader', {
+//     top: '-100vh',
+//     duration: 1,
+// })
+
 gsap.to('#Navbar', {
     opacity: 1,
     duration: 1,
@@ -176,12 +242,12 @@ landingpagetl.to('#title p', {
 landingpagetl.to('#Hero_heading #callnow_btn', {
     opacity: 1,
     x: '5px',
-    duration: 1,
+    duration: 0.5,
 })
 
 landingpagetl.from('#Contact_icon, #MoveArrows', {
     opacity: 0,
-    duration: 0.7,
+    duration: 0.5,
     x: '100px',
 })
 
@@ -259,16 +325,15 @@ gsap.from('#Specialist #Icon-box .box', {
 
 })
 
-// gsap fore Project page
+// gsap for Project page
 gsap.from('#Work #heading', {
 
     opacity: 0,
     duration: 1.5,
-    y: -100,
-    stagger: 0.3,
+    y: -65,
     scrollTrigger: {
         trigger: '#heading',
-        start: 'top 10%',
+        start: 'top 20%',
     }
 })
 
@@ -276,11 +341,9 @@ gsap.from('#Work #heading', {
 gsap.from('#project-box .row .project', {
 
     opacity: 1,
-    duration: 1.5,
-    stagger: 1,
-    scale: 0,
-    y: '200px',
-    x: 70,
+    duration: 1,
+    y: '-50px',
+    scale: 0.8,
     scrollTrigger: {
         trigger: '#heading',
         // markers: true,
@@ -295,11 +358,9 @@ gsap.from('#content #picture img', {
 
     duration: 1,
     opacity: 0,
-    scale: 0,
+    scale: 0.9,
     scrollTrigger: {
         trigger: '#content #picture img',
-        // markers: true,
-        start: 'top 95%',
 
     }
 
@@ -309,14 +370,23 @@ gsap.from('#Work-stages .steps', {
 
     duration: 0.7,
     opacity: 0,
-    scale: 0,
+    x: '-100px',
     stagger: 0.5,
     scrollTrigger: {
         trigger: '#Work-stages .steps',
         // markers: true,
+        scrub: true,
+
     }
 
 })
+
+
+
+
+
+
+
 
 
 
