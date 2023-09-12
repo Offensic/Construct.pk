@@ -155,11 +155,11 @@ Navlinks.forEach(navlink => {
 
 // ----------------------------- Fucntion When user Close thw webiste or Refresh.
 
-window.addEventListener('beforeunload', function(){
-    
-    localStorage.clear();
+// window.addEventListener('beforeunload', function(){
 
-});
+//     localStorage.clear();
+
+// });
 
 
 
@@ -168,47 +168,49 @@ window.addEventListener('beforeunload', function(){
 
 // ---------------------------- Function for the loader
 var landingpagetl = gsap.timeline();
-function loadeer() {
+// function loadeer() {
 
-    if (localStorage.getItem("hasCodeRunBefore") === null) {
+// if (localStorage.getItem("hasCodeRunBefore") === null) {
 
-        localStorage.setItem("hasCodeRunBefore", true)
-        loader.style.display = 'flex';
-        function time() {
-            main.style.height = '100svh';
-            let load = 0;
-            const counter = setInterval(() => {
-                load = + load + Math.floor(Math.random() * 10)
+// localStorage.setItem("hasCodeRunBefore", true)
+// loader.style.display = 'flex';
 
-                if (load < 100) {
-                    number.innerHTML = load + "%"
-                }
+function time() {
+    loader.style.display = 'flex';
+    main.style.height = '100svh';
+    let load = 0;
+    const counter = setInterval(() => {
+        load = + load + Math.floor(Math.random() * 10)
 
-                else {
-                    number.innerHTML = 100 + "%"
-                    clearInterval(counter)
-                    main.style.height = '0%';
-
-                }
-
-            }, 150)
+        if (load < 100) {
+            number.innerHTML = load + "%"
         }
 
-        landingpagetl.to('#loader #number', {
-            duration: 3.8,
-            onStart: time(),
-        })
+        else {
+            number.innerHTML = 100 + "%"
+            clearInterval(counter)
+            main.style.height = '0%';
 
-        landingpagetl.to('#loader', {
-            top: '-100vh',
-            duration: 1,
-        })
-    }
-    else {
-    }
+        }
+
+    }, 150)
 }
 
-loadeer();
+//         landingpagetl.to('#loader #number', {
+//             duration: 3.8,
+//             onStart: time(),
+//         })
+
+//         landingpagetl.to('#loader', {
+//             top: '-100vh',
+//             duration: 1,
+//         })
+//     }
+//     else {
+//     }
+// }
+
+// loadeer();
 
 
 
@@ -216,6 +218,15 @@ loadeer();
 ////////////// ----------------------------------------------- GSAP CODE ----------------------------------- ///////////////////
 
 // gsap for Landingpage
+landingpagetl.to('#loader #number', {
+    duration: 3.8,
+    onStart: time(),
+})
+
+landingpagetl.to('#loader', {
+    top: '-100vh',
+    duration: 1,
+})
 gsap.to('#Navbar', {
     opacity: 1,
     duration: 1,
