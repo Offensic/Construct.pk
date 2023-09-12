@@ -9,6 +9,8 @@ var logo = document.querySelector('#logo')
 var main = document.querySelector('#main')
 var DownArrow = document.querySelector('#Down-Arrow')
 
+var number = document.querySelector('#number')
+var loader = document.querySelector('#loader')
 
 var ReviewContainer = document.querySelector('#Review-container')
 const projects = document.querySelectorAll(".project")
@@ -151,25 +153,21 @@ Navlinks.forEach(navlink => {
 })
 
 
-window.onbeforeunload = function close() {
+// ----------------------------- Fucntion When user Close thw webiste or Refresh.
+
+window.addEventListener('beforeunload', function(){
+    
+    localStorage.clear();
+
+});
 
 
-    alert('do you really want to close')
 
-}
+
 
 
 // ---------------------------- Function for the loader
-var number = document.querySelector('#number')
-var loader = document.querySelector('#loader')
-
-
-
-
-
-////////////// ----------------------------------------------- GSAP CODE ----------------------------------- ///////////////////
 var landingpagetl = gsap.timeline();
-// gsap for Landingpage
 function loadeer() {
 
     if (localStorage.getItem("hasCodeRunBefore") === null) {
@@ -210,18 +208,14 @@ function loadeer() {
     }
 }
 
-loadeer()
+loadeer();
 
-// landingpagetl.to('#loader #number', {
-//     duration: 3.8,
-//     onStart: time(),
-// })
 
-// landingpagetl.to('#loader', {
-//     top: '-100vh',
-//     duration: 1,
-// })
 
+
+////////////// ----------------------------------------------- GSAP CODE ----------------------------------- ///////////////////
+
+// gsap for Landingpage
 gsap.to('#Navbar', {
     opacity: 1,
     duration: 1,

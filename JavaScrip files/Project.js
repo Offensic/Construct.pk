@@ -47,6 +47,35 @@ const Project = [
     { image: './assest/7.jpg', id: 'Project7', about: 'House 7' },
     { image: './assest/7.jpg', id: 'Project7', about: 'House 7' },
 
+    { image: './assest/11.jpg', id: 'Project11', about: 'House 11' },
+    { image: './assest/11.jpg', id: 'Project11', about: 'House 11' },
+    { image: './assest/11.jpg', id: 'Project11', about: 'House 11' },
+    { image: './assest/11.jpg', id: 'Project11', about: 'House 11' },
+    { image: './assest/11.jpg', id: 'Project11', about: 'House 11' },
+
+
+    { image: './assest/12.jpg', id: 'Project12', about: 'House 12' },
+    { image: './assest/12.jpg', id: 'Project12', about: 'House 12' },
+    { image: './assest/12.jpg', id: 'Project12', about: 'House 12' },
+    { image: './assest/12.jpg', id: 'Project12', about: 'House 12' },
+    { image: './assest/12.jpg', id: 'Project12', about: 'House 12' },
+
+    { image: './assest/13.jpg', id: 'Project12', about: 'House 13' },
+    { image: './assest/13.jpg', id: 'Project12', about: 'House 13' },
+    { image: './assest/13.jpg', id: 'Project12', about: 'House 13' },
+    { image: './assest/13.jpg', id: 'Project12', about: 'House 13' },
+    { image: './assest/13.jpg', id: 'Project12', about: 'House 13' },
+
+    { image: './assest/18.jpg', id: 'Project18', about: 'House 18' },
+    { image: './assest/18.jpg', id: 'Project18', about: 'House 18' },
+    { image: './assest/18.jpg', id: 'Project18', about: 'House 18' },
+    { image: './assest/18.jpg', id: 'Project18', about: 'House 18' },
+    { image: './assest/18.jpg', id: 'Project18', about: 'House 18' },
+
+
+
+
+
 
 
 ]
