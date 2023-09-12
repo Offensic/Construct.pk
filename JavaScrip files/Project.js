@@ -60,11 +60,11 @@ const Project = [
     { image: './assest/12.jpg', id: 'Project12', about: 'House 12' },
     { image: './assest/12.jpg', id: 'Project12', about: 'House 12' },
 
-    { image: './assest/13.jpg', id: 'Project12', about: 'House 13' },
-    { image: './assest/13.jpg', id: 'Project12', about: 'House 13' },
-    { image: './assest/13.jpg', id: 'Project12', about: 'House 13' },
-    { image: './assest/13.jpg', id: 'Project12', about: 'House 13' },
-    { image: './assest/13.jpg', id: 'Project12', about: 'House 13' },
+    { image: './assest/13.jpg', id: 'Project13', about: 'House 13' },
+    { image: './assest/13.jpg', id: 'Project13', about: 'House 13' },
+    { image: './assest/13.jpg', id: 'Project13', about: 'House 13' },
+    { image: './assest/13.jpg', id: 'Project13', about: 'House 13' },
+    { image: './assest/13.jpg', id: 'Project13', about: 'House 13' },
 
     { image: './assest/18.jpg', id: 'Project18', about: 'House 18' },
     { image: './assest/18.jpg', id: 'Project18', about: 'House 18' },

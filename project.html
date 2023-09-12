@@ -57,9 +57,9 @@
             transition: all ease 2.5s;
         }
 
-        #page2-project-wrapper .img:hover {
-            transform: scale(0.9) rotate(-20deg);
-        }
+        /* #page2-project-wrapper .img:hover {
+            transform: scale(1) rotate(-0deg);
+        } */
 
 
         .img P {
@@ -188,8 +188,13 @@
                 height: 350px;
                 flex: 0 0 350px;
             }
+        }
 
+        @media (min-width: 600px) and (max-width: 1500px) {
 
+            #page2-project-wrapper .img:hover {
+                transform: scale(0.9) rotate(-20deg);
+            }
         }
     </style>
 </head>
