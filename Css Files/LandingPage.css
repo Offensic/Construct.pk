@@ -38,8 +38,6 @@
     padding: 15px 20px;
     border-bottom: 0.2px solid whitesmoke;
     opacity: 0;
-    
-
 }
 
 /* ----------- Navbar-logo */
@@ -52,8 +50,7 @@
     color: var(--text-color);
     font-size: 22px;
     padding-left: 3.7vw;
-    z-index: 999;
-    transition: .4s ease-in-out;
+    /* z-index: 999; */
 }
 
 /* Navbar-Links */
@@ -95,7 +92,7 @@ a {
     font-size: 26px;
     cursor: pointer;
     display: none;
-    z-index: 999;
+    /* z-index: 999; */
 
 }
 
@@ -106,7 +103,7 @@ a {
     z-index: 0;
     background: rgba(255, 255, 255, .1);
     backdrop-filter: blur(15px);
-    /* border: 2px solid rgba(255, 255, 255, .5); */
+    border: 2px solid rgba(255, 255, 255, .5);
     box-shadow: 0 25px 45px rgba(107, 104, 104, 0);
     position: absolute;
     top: 0;
@@ -120,8 +117,18 @@ a {
 }
 
 
-#Navbar_Slider #Sliderlinks {
+#Navbar_Slider #Slider_nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0%;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+#Navbar_Slider #Sliderlinks {
     position: absolute;
     top: 20%;
     left: 15%;
@@ -131,6 +138,14 @@ a {
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
+}
+
+#Slider_nav #logo2 {
+    color: white;
+    font-size: 22px;
+    transition: .4s ease-in-out;
+
+
 }
 
 #Sliderlinks a {
@@ -157,7 +172,7 @@ a {
     width: 100%;
     height: 75svh;
     margin-top: clamp(5px, 2vw, 30px);
- 
+
 }
 
 #landingpage #HeroSection #Hero_heading {
@@ -259,7 +274,7 @@ img {
     align-items: end;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 0px 0px 10px 10px;
-    
+
 }
 
 #Slider_div #row .project:hover>span {
@@ -288,7 +303,7 @@ img {
 
 }
 
-#Icon_bar #Contact_icon span  a{
+#Icon_bar #Contact_icon span a {
     color: white;
     font-size: 20px;
     padding: 0px 10px 0px 10px;
@@ -322,7 +337,7 @@ img {
 
 /* This is Arrow Code with the help we can move slider left to Right It only show on large or medium screeen */
 #Icon_bar #MoveArrows {
-    width:fit-content;
+    width: fit-content;
     display: flex;
     justify-content: end;
     align-items: end;

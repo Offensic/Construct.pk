@@ -4,7 +4,7 @@ var SliderDiv = document.querySelector('#Slider_div')
 var NavbarSlider = document.querySelector('#Navbar_Slider')
 var menuopen = document.querySelector('#menu-open')
 var menuclose = document.querySelector('#menu-close')
-var logo = document.querySelector('#logo')
+var logo2 = document.querySelector('#logo2')
 
 
 var main = document.querySelector('#main')
@@ -30,9 +30,6 @@ menuopen.addEventListener('click', function () {
         // Giving fix height to the Main div becuase it an be hide the overflow I am unbale to hide in css
         main.style.height = '100svh';
 
-
-    
-
         setTimeout(function () {
             menuclose.style.display = 'block';
             menuopen.style.display = 'none';
@@ -40,7 +37,7 @@ menuopen.addEventListener('click', function () {
         }, 200)
 
         setTimeout(function () {
-            logo.style.fontSize = `clamp(50px, 6.5vw, 70px)`;
+            logo2.style.fontSize = `clamp(50px, 6.5vw, 70px)`;
 
         }, 250)
 
@@ -66,7 +63,7 @@ function MenuClose() {
         main.style.height = '0%';
         setTimeout(function () {
             // NavbarSlider.style.display = 'none';
-            logo.style.fontSize = '22px';
+            logo2.style.fontSize = '22px';
         }, 20)
 
     }, 10)

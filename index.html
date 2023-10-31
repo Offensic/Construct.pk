@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Favicon link -->
-    <link rel="icon icon"  href="./assest/favicon.svg" type="image/x-icon">
+    <link rel="icon icon" href="./assest/favicon.svg" type="image/x-icon">
 
     <!-- Bootstrap 5 Link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -96,9 +96,17 @@
     <div id="loader">
         <h1 id="number">0</id>
     </div>
-    
+
     <!-- Navbar Slider Open or Close on Click I define this on top becuase i want to maintain my Slider on all screen -->
     <div id="Navbar_Slider">
+        <div id="Slider_nav">
+            <div id="logo2">
+                <span><i class="bi bi-houses-fill"></i></span>
+            </div>
+
+            <div id="menu-close"><span><i class="bi bi-x-lg"></i></span></div>
+
+        </div>
         <div id="Sliderlinks">
             <a class="navlink" href="#landingpage">HOME</a>
             <a class="navlink" href="#About">COMPANY</a>
@@ -113,14 +121,12 @@
 
 
         <!-- This is a Page 1 (LandinagPage Page )-->
-        <section  id="landingpage">
+        <section id="landingpage">
 
             <div id="Navbar">
 
                 <div id="logo">
                     <span><i class="bi bi-houses-fill"></i></span>
-                    <!-- <a href="#Review">REVIEWS</a> -->
-
                 </div>
                 <div id="links">
                     <a href="#landingpage">HOME</a>
@@ -133,7 +139,7 @@
 
 
                 <div id="menu-open"><span><i class=" bi bi-list"></i></span></div>
-                <div id="menu-close"><span><i class="bi bi-x-lg"></i></span></div>
+                <!-- <div id="menu-close"><span><i class="bi bi-x-lg"></i></span></div> -->
 
             </div>
 
@@ -150,7 +156,7 @@
                 </div>
 
                 <!-- Project Slider  -->
-                <div  class="col col-12 col-sm-12 col-md-6 col-lg-7 col-xl-7" id="Slider_div">
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-7 col-xl-7" id="Slider_div">
 
                     <div id="row" style="display: flex; justify-content: flex-end; ">
 
@@ -227,14 +233,14 @@
             <div id="L-side">
                 <div id="headings">
                     <h1>About us</h1>
-                    <p >Construction and Design: The art of construction and design is the
+                    <p>Construction and Design: The art of construction and design is the
                         cornerstone of shaping
                         functional and visually appealing spaces. It's the fusion of creativity and engineering, where
                         ideas are transformed into physical reality, creating environments that inspire, facilitate, and
                         leave lasting impressions.</p>
 
                     <br>
-                    <p >Construction and Design: The art of construction and design is the
+                    <p>Construction and Design: The art of construction and design is the
                         cornerstone of shaping.
                     </p>
                 </div>
@@ -259,7 +265,8 @@
                     </div>
 
                     <div id="hover-card">
-                        <p > <b> ❝Abdul Waheed Civil Engineer❞</b> Engineering Services all constrctuion and Interior Solution</p>
+                        <p> <b> ❝Abdul Waheed Civil Engineer❞</b> Engineering Services all constrctuion and Interior
+                            Solution</p>
                     </div>
 
 
@@ -336,19 +343,21 @@
 
                 <div class="row">
 
-                    <div id="All-project" class="col col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 m-2"  style="height: 300px; border-radius: 10px;">
+                    <div id="All-project" class="col col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 m-2"
+                        style="height: 300px; border-radius: 10px;">
 
                         <div id="heading">
                             <h3>Pakistan Aestetic Homes</h3>
                             <p>Desing For life</p>
                         </div>
 
-                        <div id="Projects-link" >
+                        <div id="Projects-link">
                             <a href="./project.html" id="Allproject" class="project">View all project</a>
                         </div>
                     </div>
 
-                    <a id="Project18" href="./project.html" class="col col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 m-2 project" > 
+                    <a id="Project18" href="./project.html"
+                        class="col col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 m-2 project">
                         <!-- style="background-image: url('./assest/5.jpg'); background-position: center; background-image: cover; height:300px;"> -->
                         <img class="img-fluid" src="./assest/18.jpg" alt="" style="height: 295px;" loading="lazy">
 
@@ -359,7 +368,8 @@
 
                     </a>
 
-                    <a id="Project7" href="./project.html" class="col col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 m-2 project">
+                    <a id="Project7" href="./project.html"
+                        class="col col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 m-2 project">
                         <img class="img-fluid" src="./assest/7.jpg" alt="" style="height: 360px;" loading="lazy">
 
                         <div id="heading">
@@ -367,7 +377,8 @@
                             <span>250m</span>
                         </div>
                     </a>
-                    <a id="Project12" href="./project.html" class="col col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 m-2 project">
+                    <a id="Project12" href="./project.html"
+                        class="col col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 m-2 project">
                         <img class="img-fluid" src="./assest/12.jpg" alt="" style="height: 360px;" loading="lazy">
 
                         <div id="heading">
@@ -456,17 +467,17 @@
 
                 <div id="wrapper">
                     <div id="Review-move-left">
-                        <span onclick="MoveReviewLeft()" ><i class="bi bi-arrow-left"></i></span>
+                        <span onclick="MoveReviewLeft()"><i class="bi bi-arrow-left"></i></span>
                     </div>
 
 
                     <div id="Review-container">
-                        
+
                     </div>
 
 
 
-                    <div id="Review-move-right" >
+                    <div id="Review-move-right">
                         <span onclick="MoveReviewRight()"><i class="bi bi-arrow-right"></i></span>
                     </div>
                 </div>
@@ -517,7 +528,7 @@
                         <p>Office Location</p>
                         <p>+92304-4006056</p>
                         <p>abdulwaheed12533@gmail.com</p>
-                        <p >License Required</p>
+                        <p>License Required</p>
                     </div>
                 </div>
                 <div id="Contact-box" class="box">
