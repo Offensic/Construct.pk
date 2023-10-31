@@ -21,7 +21,7 @@
 }
 
 #L-side #headings {
-    z-index: 999;
+    z-index: 99;
     margin: clamp(5px, 6.2vw, 65px);
     color: white;
 }

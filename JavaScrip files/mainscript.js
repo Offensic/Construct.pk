@@ -1,4 +1,5 @@
 // ------------------------------ Java Script foor the Landing Page
+var Navbar = document.querySelector('#Navbar')
 var SliderDiv = document.querySelector('#Slider_div')
 var NavbarSlider = document.querySelector('#Navbar_Slider')
 var menuopen = document.querySelector('#menu-open')
@@ -24,10 +25,13 @@ menuopen.addEventListener('click', function () {
 
 
     setTimeout(function () {
-        NavbarSlider.style.zIndex = '99';
+        NavbarSlider.style.zIndex = '999';
         NavbarSlider.style.width = '100%';
         // Giving fix height to the Main div becuase it an be hide the overflow I am unbale to hide in css
         main.style.height = '100svh';
+
+
+    
 
         setTimeout(function () {
             menuclose.style.display = 'block';
@@ -54,16 +58,12 @@ menuopen.addEventListener('click', function () {
 // For Closing Navbar Slider 
 function MenuClose() {
 
-
     setTimeout(function () {
         // NavbarSlider.style.transform = `translateX(100%)`
         NavbarSlider.style.zIndex = '0';
         NavbarSlider.style.width = '0%';
         // removing fix height to the Main div becuase I want to see the the content on full browser
         main.style.height = '0%';
-
-
-
         setTimeout(function () {
             // NavbarSlider.style.display = 'none';
             logo.style.fontSize = '22px';
@@ -78,7 +78,6 @@ function MenuClose() {
 
 //I make for this becauase i want to use 1 more time this function
 menuclose.addEventListener('click', function () {
-
     MenuClose()
 })
 
@@ -146,7 +145,7 @@ Navlinks.forEach(navlink => {
 
     navlink.addEventListener('click', function () {
         if (window.innerWidth <= 767) {
-            MenuClose()
+            // MenuClose()
         }
     })
 
