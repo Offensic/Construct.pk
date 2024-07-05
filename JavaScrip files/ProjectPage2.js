@@ -67,11 +67,7 @@ projectImage.forEach(projectimg => {
 
         else{
             
-
         }
-
-
-
     })
 })
 
