@@ -235,11 +235,10 @@ a {
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
     /* opacity: 0; */
+    scrollbar-width: none; /* Single Hack to unshow scrollbar*/
 }
 
-#landingpage #HeroSection #Slider_div::-webkit-scrollbar {
-    display: none;
-}
+
 
 #HeroSection #Slider_div #row .project {
     margin: 0 13px 0 13px;

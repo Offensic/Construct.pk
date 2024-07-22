@@ -50,12 +50,11 @@
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
+    scrollbar-width: none; /* Single Hack to unshow scrollbar*/
+
 
 }
 
-#Review-container::-webkit-scrollbar {
-    display: none;
-}
 
 /* -------------- Code for the review Box */
 #wrapper #Review-container .Review-box {
